@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        header {
+            max-width: 100%;
+            height: 10%;
+        }
+
+        section {
+            height: 60%;
+            background-color:azure;
+        }
+
+
+        nav {
+            float: left;
+            /*height: 70%;*/
+            width: 20%;
+            background-color: antiquewhite;
+            border: 1.5px dashed black;
+            margin: 5px;
+            padding: 5px;
+        }
+        nav p{
+color:red;
+text-align:center;
+text-anchor:start;
+font-size:30px;
+font-weight:bold;
+font-family:Calibri;
+text-decoration:underline;
+        }
+
+        .dleft {
+            /*height: 460px;*/
+        }
+
+        .umainleft {
+            color: blue;
+        }
+
+            .umainleft li ul {
+                display: none;
+            }
+
+            .umainleft li:hover> ul {
+                display: block;
+                line-height:25px;
+                font-weight:bold;
+
+            }
+
+            .umainleft li:hover {
+                /*border: 1px solid black;
+                /*color: red;
+                background-color: coral;*/ */
+            }
+
+        .dleft .umainleft li {
+            position: sticky;
+        }
+
+        table {
+           text-align: left;
+            
+        }
+
+        .tregion td {
+            border-top: 2px dotted red;
+        }
+
+        .tregion tr:hover {
+            background-color: gray;
+            color: darkblue;
+            font: bold 12px arial,verdana;
+        }
+
+        .tregion tr:nth-child(even) {
+            padding: 1px;
+            text-align: left;
+            color: red;
+            font: bold 12px arial,verdana;
+            
+        }
+        .tregion tr:nth-child(odd) {
+            padding: 1px;
+            text-align: left;
+            color: green;
+            font: bold 12px arial,verdana;
+        }
+
+        .tregion td:last-child {
+            padding: 1px;
+            text-align: left;
+            color: green;
+            font: bold 12px arial,verdana;
+        }
+
+        article {
+            /*height: 70%;*/
+            width: auto;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        article input[type=submit]{
+            border:1px solid none;
+            width:120px;
+            height:25px;
+
+        }
+
+        article p{
+            font:italic 30px arial;
+            color:blue;
+
+             
+        }
+        .add{
+            color:red;
+            text-decoration:underline;
+            font-family:'Times New Roman', Times, serif;
+           text-transform:unset;
+
+        }
+
+
+        footer {
+            background-color: green;
+            color: red;
+            border-top: 2px solid black;
+            height: auto;
+            font-weight: bold;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="..\svg\google.svg" alt="Киви на овале" style="width: 100px; height: 30px">
+    </header>
+
+    <section>
+        <nav>
+            <p>Web Developers,Inc.</p>
+
+            <div class="dleft">
+                <ul class="umainleft" style="list-style-type:disc;">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Product</a></li>
+                    <li><a href="/">Kontragent</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contract</a>
+                        <ul class="add">
+                            <li>Advertising</li>
+                            <li>Marketing</li>
+                            <li>Sales</li>
+                            <li>The CEO</li>
+                            <li>Salary</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="dleft2">
+                <br />
+                <h2 style="color:blue;font:bold italic 24px caption;">Related Brand</h2>
+                <ul class="umainleft2" style="list-style-type:initial;">
+                    <li><a href="/">Abbasaknsmahd</a></li>
+                    <li><a href="/">SiterCompany</a></li>
+                    <li><a href="/">OrganitedCity</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <article>
+            <p>Sign Up</p><br />
+            <!-- Qeydiyyat -->
+            <form action="/signup" method="post">
+                <table class="tregion">
+                    <caption style="text-align:left;">Welcome home my page </caption>
+
+                    <tr>
+                        <td><label for="">First Name</label></td>
+                        <td><input type="text" name="fname" placeholder="First Name" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Last Name</label></td>
+                        <td><input type="text" name="lname" placeholder="Last Name" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Last Name</label></td>
+                        <td><input type="text" name="lname" placeholder="Last Name" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender</label></td>
+                        <td>
+                            <input type="radio" value="asas" name="gender" required /><label for="gender">Male</label>
+                            <input type="radio" value="asas" name="gender" required /><label for="gender">Female</label>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Create profile" style="" /><br>
+                
+            </form>
+        </article>
+
+    </section>
+    <footer>
+        <p> Copyright by Samir 2020</p>
+    </footer>
+
+</body>
+</html>
